@@ -1,0 +1,5 @@
+// 繼承樣式=> @extend + %(佔位符)+繼承樣式名稱
+#section01{
+    @extend %frame;
+    top: -50px;
+}

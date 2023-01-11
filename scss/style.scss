@@ -7,6 +7,9 @@
 // 全域設定
 @import './global';
 
+// 繼承樣式
+@import './extends/frame';
+
 // 區塊結構
 @import './navbar';
 @import './home';
