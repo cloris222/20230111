@@ -35,4 +35,46 @@
             background: url(../../images/frame_bottom_xs.png)no-repeat center/contain;
         }
     }
+
+
+    // md
+    @include md{
+        .content{
+            .frame{
+                background: url(../../images/frame_middle_xs.png)repeat-y center;
+                padding: 1rem 7rem;
+                margin-bottom: -1px;
+            }
+
+            &::before{
+                content:'';
+                background: url(../../images/frame_top_xs.png)no-repeat center ;
+            }
+            &::after{
+                content:'';
+                background: url(../../images/frame_bottom_xs.png)no-repeat center ;
+            }
+        }
+    }
+
+    // lg
+    @include lg{
+        .content{
+            .frame{
+                background: url(../../images/frame_middle_small.png)repeat-y center/contain;
+                padding: 1rem 5rem;
+                // margin-top:calc();
+                margin-bottom: calc(-1px - 1vw);
+            }
+
+            &::before{
+                content:'';
+                background: url(../../images/frame_top.png)no-repeat center/contain ;
+            }
+            &::after{
+                content:'';
+                background: url(../../images/frame_bottom.png)no-repeat center/contain ;
+            }
+        }
+    }
 }
