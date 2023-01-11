@@ -14,7 +14,7 @@ body {
   z-index: 1000;
 }
 
-#section01 .content .frame {
+#section02 .content .frame, #section01 .content .frame {
   color: rgb(50, 20, 0);
   font-size: 1.1rem;
   padding: 0.3rem;
@@ -23,55 +23,55 @@ body {
   margin-bottom: -30px;
   position: relative;
 }
-#section01 .content .frame h1 {
+#section02 .content .frame h1, #section01 .content .frame h1 {
   font-size: 2rem;
   color: #fff;
   font-weight: bolder;
   text-shadow: 1px 1px 1px rgb(60, 50, 0), 2px 2px 2px rgb(60, 50, 0);
   position: absolute;
-  left: -50%;
-  top: -60px;
+  left: 50%;
+  top: -52px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-#section01 .content::before {
+#section02 .content::before, #section01 .content::before {
   content: "";
   display: block;
   height: 90px;
   background: url(../../images/frame_top_xs.png) no-repeat center/contain;
 }
-#section01 .content::after {
+#section02 .content::after, #section01 .content::after {
   content: "";
   display: block;
   height: 50px;
   background: url(../../images/frame_bottom_xs.png) no-repeat center/contain;
 }
 @media (min-width: 768px) {
-  #section01 .content .frame {
+  #section02 .content .frame, #section01 .content .frame {
     background: url(../../images/frame_middle_xs.png) repeat-y center;
     padding: 1rem 7rem;
     margin-bottom: -1px;
   }
-  #section01 .content::before {
+  #section02 .content::before, #section01 .content::before {
     content: "";
     background: url(../../images/frame_top_xs.png) no-repeat center;
   }
-  #section01 .content::after {
+  #section02 .content::after, #section01 .content::after {
     content: "";
     background: url(../../images/frame_bottom_xs.png) no-repeat center;
   }
 }
 @media (min-width: 992px) {
-  #section01 .content .frame {
+  #section02 .content .frame, #section01 .content .frame {
     background: url(../../images/frame_middle_small.png) repeat-y center/contain;
     padding: 1rem 5rem;
     margin-bottom: calc(-1px - 1vw);
   }
-  #section01 .content::before {
+  #section02 .content::before, #section01 .content::before {
     content: "";
     background: url(../../images/frame_top.png) no-repeat center/contain;
   }
-  #section01 .content::after {
+  #section02 .content::after, #section01 .content::after {
     content: "";
     background: url(../../images/frame_bottom.png) no-repeat center/contain;
   }
@@ -228,6 +228,16 @@ body {
   #section01 {
     top: 0;
     background: url(../images/section01_top_mask.png) no-repeat center top/100%;
+  }
+}
+
+#section02 {
+  top: -50px;
+}
+@media (min-width: 992px) {
+  #section02 {
+    top: 0;
+    margin-top: 90px;
   }
 }
 
