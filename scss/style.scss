@@ -1,6 +1,9 @@
 // 變數
 @import './variables';
 
+// mixins
+@import './mixins/rwd';
+
 // 全域設定
 @import './global';
 
@@ -12,6 +15,9 @@
 @import './section03';
 @import './section04';
 @import './section05';
-@import './footer'
+@import './footer';
+
+// 功能
+@import './features/modal'
 
 

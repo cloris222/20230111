@@ -370,7 +370,7 @@ $enable-gradients:            false !default;
 $enable-transitions:          true !default;
 $enable-reduced-motion:       true !default;
 // 專案修改
-// $enable-smooth-scroll:        false !default;
+$enable-smooth-scroll:        false !default;
 $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
@@ -1123,6 +1123,7 @@ $nav-link-padding-y:                .5rem !default;
 $nav-link-padding-x:                1rem !default;
 // 專案修改
 // $nav-link-font-size:                null !default;
+$nav-link-font-size:                1.3rem !default;
 $nav-link-font-weight:              null !default;
 $nav-link-color:                    var(--#{$prefix}link-color) !default;
 $nav-link-hover-color:              var(--#{$prefix}link-hover-color) !default;
